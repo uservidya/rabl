@@ -5,8 +5,7 @@ rvm:
  # - 2.0.0
 gemfile: Gemfile.ci
 matrix:
+  include:
+    - rvm: 2.0.0
   exclude:
     - rvm: 1.8.7
-  include:
-    # Django 1.4 and 1.5 do not fully support Python 3.3
-    - 2.0.0
